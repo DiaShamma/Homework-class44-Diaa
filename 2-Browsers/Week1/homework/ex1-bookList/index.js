@@ -30,7 +30,7 @@ function createBookList(books) {
 
     const imgElement = document.createElement('img');
     imgElement.classList.add('book-cover');
-    imgElement.src = `./assets.${book.isbn}.jpg`;
+    imgElement.src = `./assets/${book.image}.jpg`;
 
     liElement.appendChild(pElement);
     liElement.appendChild(imgElement);
@@ -50,18 +50,21 @@ function main() {
   const myBooks = [
     {
       title: 'The Design of Everyday Things',
+      image: 'the_design_of_everyday_things',
       author: 'Don Norman',
       isbn: '978-0465050659',
       alreadyRead: false,
     },
     {
       title: 'The Most Human Human',
+      image: 'the_most_human_human',
       author: 'Brian Christian',
       isbn: '978-1617933431',
       alreadyRead: true,
     },
     {
       title: 'The Pragmatic Programmer',
+      image: 'the_pragmatic_programmer',
       author: 'Andrew Hunt',
       isbn: '978-0201616224',
       alreadyRead: true,
